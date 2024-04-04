@@ -116,7 +116,64 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
+    --cols: 3;
+    --gap: 30px;
+    --gap-per-col: var(--gap) * (var(--cols) - 1) / var(--cols);
+
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.hebergements-cards
+{
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.hebergements-cards > *
+{
+    box-sizing: border-box;
+    flex-basis:  calc(100% / var(--cols) - var(--gap-per-col));
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+}
+
+.hebergements-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+    gap: 8px;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+.hebergements-more
+{
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /****** Populaires ***********/
@@ -179,6 +236,7 @@ a {
 .activites-cards .card
 {
     padding: 0;
+    height: 100%;
 }
 .activites-cards .card img
 {
