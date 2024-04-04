@@ -336,7 +336,7 @@ a {
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 146px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -468,6 +468,11 @@ a {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites-cards .card img
+    {
+        height: 200px;
     }
 }
 
