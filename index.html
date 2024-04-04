@@ -16,11 +16,60 @@
 
 <body>
     <div class="main-container">
-        <header></header>
-        <main>
+        <nav class="header">
+            <a href="#" class="header-logo">
+                <img
+                    srcset="images/logo/Booki.png, images/logo/Booki@3x.png 3x"
+                    src="images/logo/Booki.png" alt="Booki"
+                />
+            </a>
+            <div class="header-menu">
+                <a href="#hebergements" class="active">Hébergements</a>
+                <a href="#activites">Activités</a>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="query">
+                <div class="headline">
+                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p class="query-subtitle">En plein centre-ville ou en pleine nature</p>
+                </div>
+                <form class="search-bar" action="" method="get">
+                    <span class="search-bar-icon">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    </span>
+                    <input type="text" name="city" placeholder="Ville" value="Marseille, France"/>
+                    <button type="submit">
+                        Rechercher
+                    </button>
+                </form>
+                <div class="filter-bar">
+                    <h3>Filtres</h3>
+                    <button>
+                        <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                        Économique
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-person" aria-hidden="true"></i>
+                        Familial
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                        Romantique
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-fire" aria-hidden="true"></i>
+                        Nos pépites
+                    </button>
+                </div>
+                <div class="infobar">
+                    <span class="icon"><i class="fa-xs fa-solid fa-info" aria-hidden="true"></i></span>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </header>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-                    <h2 class="section-title">Hébergements à Marseille</h2>
+                    <h2 class="section-title" id="hebergements">Hébergements à Marseille</h2>
                     <div class="hebergements-cards flex">
                         <a href="#">
                             <article class="card">
@@ -206,7 +255,7 @@
                 </section>
             </div>
             <section class="activites">
-                <h2 class="section-title">Activités à Marseille</h2>
+                <h2 class="section-title" id="activites">Activités à Marseille</h2>
                 <div class="activites-cards flex">
                     <a href="#">
                         <article class="card">
