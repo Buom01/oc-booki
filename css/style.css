@@ -32,14 +32,12 @@ body {
 
 .main-content
 {
-    max-width: 1440px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     gap: 35px;
 }
 
-p, li
+p, li, a
 {
     font-size: 16px;
     line-height: normal;
@@ -68,16 +66,6 @@ a {
 
 .card-title {
     font-size: 16px;
-}
-
-.flex
-{
-    display: flex;
-}
-
-.flex > *
-{
-    flex: 1;
 }
 
 .euro {
@@ -139,7 +127,6 @@ a {
 {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     gap: 35px;
 }
 
@@ -147,7 +134,6 @@ a {
 {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     gap: 8px;
 }
 .headline h2
@@ -282,12 +268,14 @@ a {
 
 .hebergements-cards
 {
+    display: flex;
     gap: 30px;
     flex-wrap: wrap;
 }
 
 .hebergements-cards > *
 {
+    flex: 1;
     box-sizing: border-box;
     flex-basis:  calc(100% / var(--cols) - var(--gap-per-col));
 }
@@ -385,7 +373,12 @@ a {
 }
 .activites-cards
 {
+    display: flex;
     gap: 30px;
+}
+.activites-cards > *
+{
+    flex: 1;
 }
 .activites-cards .card
 {
@@ -414,12 +407,14 @@ a {
 /****** Footer ***********/
 .footer
 {
+    display: flex;
     gap: 15px;
     background-color: var(--main-bg-color);
 }
 
 .footer section
 {
+    flex: 1;
     padding: 20px;
 }
 
