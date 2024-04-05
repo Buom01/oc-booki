@@ -12,6 +12,7 @@
 
 .fa-solid {
     color: var(--main-color);
+    font-size: 16px;
 }
 
 body {
@@ -35,6 +36,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 35px;
+}
+
+h3
+{
+    font-size: 18px;
 }
 
 p, li, a
@@ -70,6 +76,7 @@ a {
 
 .euro {
     font-weight: 700;
+    font-size: inherit;
 }
 
 .neutral-star {
