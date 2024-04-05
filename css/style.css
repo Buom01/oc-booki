@@ -587,6 +587,7 @@ a {
         --columns: 2;
         --gap: 10px;
         grid-row-gap: 20px;
+        width: 100%;
     }
     .filters .filter
     {
@@ -637,5 +638,14 @@ a {
     .footer section
     {
         padding: 0;
+    }
+}
+
+/* Extra small devices (phones, less than 360px) */
+@media (max-width: 359.8px)
+{
+    .filters
+    {
+        --columns: 1;
     }
 }
