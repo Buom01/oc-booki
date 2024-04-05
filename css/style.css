@@ -56,8 +56,8 @@ a {
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 15px;
+    box-sizing: border-box;
 }
 
 .card img {
@@ -200,7 +200,7 @@ a {
 .search-bar-submit
 {
     border: 0;
-    padding: 15px 16px 15px 16px;
+    padding: 15px 16px;
     border-radius: 0px 15px 15px 0px;
     font-weight: bold;
     font-size: 18px;
@@ -232,7 +232,7 @@ a {
 {
     display: flex;
     align-items: center;
-    padding: 4px 19px 4px 19px;
+    padding: 4px 19px;
     height: 50px;
     border: 2px solid var(--filter-border-color);
     border-radius: 25px;
@@ -266,6 +266,7 @@ a {
 .infobar p
 {
     flex: 1;
+    margin: 0;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -277,7 +278,7 @@ a {
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -297,32 +298,30 @@ a {
     display: flex;
     flex-direction: column;
     height: 100%;
+    gap: 4px;
+    padding: 0 0 15px 0;
 }
 
 .hebergements-cards img {
     width: 100%;
     height: 124px;
     border-radius: 20px 20px 0 0;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 .hebergements-cards .card-content {
     display: flex;
     flex-direction: column;
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
     gap: 8px;
 }
 
-.hebergements-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.hebergements-cards .card-subtitle {
+.hebergements-cards .card-title,
+.hebergements-cards .card-subtitle
+{
     margin: 0;
-}
-
-.hebergements-cards .card-rating {
-    margin-bottom: 5px;
+    padding: 0;
 }
 
 .hebergements-more
@@ -350,6 +349,7 @@ a {
 
 .populaires-cards .card {
     display: flex;
+    padding: 5px;
 }
 
 .populaires-cards img {
@@ -361,24 +361,21 @@ a {
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding: 10px 0px 5px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.populaires-cards .card-subtitle {
+.populaires-cards .card-title,
+.populaires-cards .card-subtitle
+{
     margin: 0;
 }
-
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
+.populaires-cards .card-subtitle
+{
+    margin-top: 5px;
 }
 
 /****** Activités ***********/
